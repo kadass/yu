@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan dan Doa Ulang Tahun</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+      flex-direction: column;
+    }
+    .container {
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+    .active {
+      display: block;
+    }
+    .card {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .card h1 {
+      font-size: 24px;
+      color: #ff6f61;
+    }
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .card .highlight {
+      color: #ff6f61;
+      font-weight: bold;
+    }
+    .card button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #ff6f61;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .card button:hover {
+      background: #e0554e;
+    }
+    .form-container textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      resize: none;
+    }
+    .form-container button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #ff6f61;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .form-container button:hover {
+      background: #e0554e;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .tabs button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+    .tabs button:hover {
+      background-color: #e0554e;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ucapan Ulang Tahun Tab -->
+  <div id="ucapan" class="container active">
+    <div class="card">
+      <h1>Selamat Ulang Tahun Sayang! 🦖 🎉</h1>
+      <p>
+        <span class="highlight">Untuk orang paling kek taik tapi sayang puollllllllllll ❤️</span> 
+        <br><img src="https://www.dropbox.com/scl/fi/x0wqhdtj8a7rh2jj6taaz/b.jpg?rlkey=2ibzgpt7uxccar1yd1xpzz1ou&st=5ytx8hdw&raw=1" alt="Gambar Ulang Tahun" style="max-width: 50%; height: auto; margin-top: 20px;"><br> 
+        <br><br>
+        Bisa gasee gajadi orang ngeselin yg suka cubit pipi sama mulot haaaahhhh 🙄.  
+        <br>
+        Maap yaw kalo sering bikin salah.<br>  
+        Maaf kalo sering ceroboh juge yeeeeeeee 🤭.  
+        <br><br>
+        Semoga semua yang kamu inginkan tercapai, sehat selalu, dan jangan lupa bahagiain aku juga!  
+        <br><br>
+        <span class="highlight">Love youuuuuw! 😘💕</span>
+      </p>
+      <!-- Menambahkan gambar di bawah ucapan -->
+      <button onclick="showTab('doa')">Isi Doa untuk Ulang Tahun ❤️</button>
+    </div>
+  </div>
+
+  <!-- Form Doa Tab -->
+  <div id="doa" class="container">
+    <div class="form-container">
+      <h1>Kirim Doa Ulang Tahun 🎉</h1>
+      <form action="https://docs.google.com/forms/d/1-ELPNNSMKwV88nB7bQ3qnrVHDZNPlWWSQDlV4bhv_oQ/formResponse" method="POST">
+        <!-- Pastikan 'name' sesuai dengan ID form dari Google Form -->
+        <textarea name="entry.1691960640" jsname="o6bZLc"  placeholder="Tulis doa kamu di sini..." required></textarea>
+        <button type="submit">Kirim Doa ❤️</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabName) {
+      // Hide all tabs
+      const tabs = document.querySelectorAll('.container');
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      // Show the selected tab
+      const selectedTab = document.getElementById(tabName);
+      selectedTab.classList.add('active');
+    }
+  </script>
+</body>
+</html>
